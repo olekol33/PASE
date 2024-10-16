@@ -1,0 +1,83 @@
+CPLEX Parameter File Version 22.1.1.0
+
+#Relative MIP gap tolerance
+#2009 0.15
+2009 0.05
+
+#relative gap for solution pool
+#2105 1.2
+
+#absolute MIP gap tolerance
+#2008 11.5
+
+#random seed
+#1124 44 #seed
+
+
+#deterministic time limit
+#1127 39200
+
+#optimizer time limit in seconds
+1039 49
+
+# MIP branching direction
+#2009 1 #up
+
+# MIP node selection strategy
+#2018 0 #Depth-First search
+
+# MIP node log display information
+2012 3
+
+# clock type for computation time
+1006 1
+
+#MIP probing level
+#2042 3
+
+#Agressive cuts
+#2044 2
+#2195 2
+#2003 2
+#2005 2
+#2053 2
+#2040 2
+#2051 2
+#2049 2
+#2041 2
+#2181 2
+#2152 2
+#2052 2
+#2134 2
+#2196 2
+#2111 2
+
+#MIP emphasis switch
+#2058 1 #Emphasize feasibility over optimality
+#2058 2 #Emphasize optimality over feasibility
+#2058 4 #Emphasize finding hidden feasible solutions
+#2058 5 #Emphasize finding high quality feasible solutions earlier
+
+#solution pool intensity
+#2107 1 #Light: quickly generate only a small number of solutions
+#2107 2 #Moderate: generate a larger number of solutions
+#2107 3 #Aggressive: generate many solutions and expect performance penalty
+
+#memory reduction switch
+#1082 1 #On; conserve memory where possible
+
+#parallel mode switch
+1109 1 #Deterministic
+
+
+###############################   TUNING  ###################################
+#For full run:
+#MIP variable selection strategy
+#2028 4 	#Branch based on pseudo reduced costs
+
+#MIP probing level
+#2042 -1 #No probing
+
+
+
+
